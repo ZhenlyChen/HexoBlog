@@ -77,17 +77,19 @@ let commentsData = new Vue({
 $(() => {
   //----------------------------
   //计数系统
-  let reg = /page\/[0-9]+\/index.html/
+  let reg = /page\/[0-9]+\/index.html/;
   if (sign == 'index.html' || reg.test(sign)) getReadCount(); // 主页
-  reg = /^[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-zA-z-]+\/$/
+  reg = /^[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-zA-z-]+\/$/;
   if (reg.test(sign)) { // 文章页面
     addReadCount();
   }
   addPeople();
   //--------------------------
   //用户系统
-  if (getCookie('isLogin') == 'true') {
+  let userLogin = false;
+  if (getCookie('isLogin') == 'true' && getCookie('name') !== null) {
     $('#loginLi').html('<a href="/user.html" rel="section" ><i class = "menu-item-icon fa fa-fw fa-user-o"></i><br>' + getCookie('name') + '</a>');
+    userLogin = true;
   }
   //--------------------------
   //评论系统
@@ -96,7 +98,7 @@ $(() => {
     if (getQueryString('where') !== null) {
       document.getElementById(getQueryString('where')).scrollIntoView();
     }
-    if (getCookie('isLogin') == 'true') {
+    if (userLogin) {
       $('#loginBox').hide();
       $('#userName').html(getCookie('name'));
     } else {
