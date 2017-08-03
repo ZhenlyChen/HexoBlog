@@ -56,7 +56,6 @@ exports.getComments = (req, res, next) => {
 exports.addComment = (req, res, next) => {
   artDB.findOne({ url: req.body.url }, (err, val) => {
     if (val !== null) {
-
       val.comment.push({
         user: verify.getUserData(res).name,
         time: getTime(),

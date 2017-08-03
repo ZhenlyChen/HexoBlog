@@ -27,9 +27,10 @@ app.get('/', (req, res) => {
   res.send('Hexo auxiliary system is running');
 });
 
-app.post('/getReadCount', Article.getReadCount);
-app.post('/addReading', Article.addReading);
-app.post('/getComments', Article.getComments);
-app.post('/addComment', verify.checkToken, Article.addComment);
+app.post('/getReadCount', Article.getReadCount); //获取文章阅读人数
+app.post('/addReading', Article.addReading); //增加文章阅读人数
+app.post('/getComments', Article.getComments); //获取评论
+app.post('/addComment', verify.checkToken, Article.addComment); //提交评论
 
-app.post('/login', User.login, User.login_send);
+app.post('/login', User.login, User.login_send); //用户登录
+app.post('/logout', verify.logout); //退出登陆

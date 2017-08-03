@@ -41,8 +41,14 @@ let getCookie = (name) => { //获取cookie
 let getQueryString = (name) => { //获取get参数
   var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
   var r = window.location.search.substr(1).match(reg);
-  return r != null ? unescape(r[2]) : null;
+  return r !== null ? unescape(r[2]) : null;
 }
+
+let delCookie = (name) => { //为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
+  var date = new Date();
+  date.setTime(date.getTime() - 10000);
+  document.cookie = name + "=a; expires=" + date.toGMTString();
+};
 
 let loginBack = () => {
   window.location.href = "https://oauth.xmatrix.studio/?sid=10003&args=" + sign + "?where=comments";
@@ -51,9 +57,19 @@ let loginBack = () => {
 let getComments = () => {
   $.post('/api/getComments', { url: sign }, (data) => {
     commentsData.comments = data.comments;
-    if (data.state == 'ok') {
-      $('#noComment').hide();
-    }
+  });
+};
+
+let logout = () => {
+  $.post('/api/logout', {}, (data) => {
+    window.location.href = '/';
+    delCookie('name');
+    delCookie('email');
+    delCookie('web');
+    delCookie('sex');
+    delCookie('level');
+    delCookie('exp');
+    delCookie('class');
   });
 };
 
