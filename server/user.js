@@ -70,4 +70,4 @@ exports.login_send = (req, res, next) => {
       class: res.locals.userClass,
     });
   });
-}
+};

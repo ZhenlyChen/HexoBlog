@@ -1,478 +1,19 @@
-<!DOCTYPE html>
-
-
-
-
-
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-
-
-
-
-
-
-
-
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-  <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-  <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Zhenly" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
-
-
-
-
-
-
-  <meta name="description" content="ZhenlyChenQQ：573223251 邮箱：a@zhenly.cn 大事件: 2017-7-21 博客从Wordpress迁移到Hexo  欢迎大家在下面留言讨论">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="关于">
-  <meta property="og:url" content="https://blog.zhenly.cn/about/index.html">
-  <meta property="og:site_name" content="Zhenly">
-  <meta property="og:description" content="ZhenlyChenQQ：573223251 邮箱：a@zhenly.cn 大事件: 2017-7-21 博客从Wordpress迁移到Hexo  欢迎大家在下面留言讨论">
-  <meta property="og:locale" content="zh-Hans">
-  <meta property="og:updated_time" content="2017-07-31T05:19:03.281Z">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="关于">
-  <meta name="twitter:description" content="ZhenlyChenQQ：573223251 邮箱：a@zhenly.cn 大事件: 2017-7-21 博客从Wordpress迁移到Hexo  欢迎大家在下面留言讨论">
-
-
-
-  <script type="text/javascript" id="hexo.configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {
-      root: '/',
-      scheme: 'Mist',
-      sidebar: {
-        "position": "left",
-        "display": "post",
-        "offset": 12,
-        "offset_float": 0,
-        "b2t": false,
-        "scrollpercent": false,
-        "onmobile": false
-      },
-      fancybox: true,
-      motion: true,
-      duoshuo: {
-        userId: '0',
-        author: '博主'
-      },
-      algolia: {
-        applicationID: '',
-        apiKey: '',
-        indexName: '',
-        hits: {
-          "per_page": 10
-        },
-        labels: {
-          "input_placeholder": "Search for Posts",
-          "hits_empty": "We didn't find any results for the search: ${query}",
-          "hits_stats": "${hits} results found in ${time} ms"
-        }
-      }
-    };
-  </script>
-
-
-
-  <link rel="canonical" href="https://blog.zhenly.cn/about/" />
-
-
-
-
-
-  <title>关于 | Zhenly</title>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-
-
-
-
-
-  <div class="container sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner">
-        <div class="site-brand-wrapper">
-          <div class="site-meta ">
-
-
-            <div class="custom-logo-site-title">
-              <a href="/" class="brand" rel="start">
-                <span class="logo-line-before"><i></i></span>
-                <span class="site-title">Zhenly</span>
-                <span class="logo-line-after"><i></i></span>
-              </a>
-            </div>
-
-            <p class="site-subtitle">Time</p>
-
-          </div>
-
-          <div class="site-nav-toggle">
-            <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-          </div>
-        </div>
-
-        <nav class="site-nav">
-
-
-
-          <ul id="menu" class="menu">
-
-
-            <li class="menu-item menu-item-home">
-              <a href="/" rel="section">
-
-                <i class="menu-item-icon fa fa-fw fa-home"></i> <br /> 首页
-              </a>
-            </li>
-
-
-            <li class="menu-item menu-item-archives">
-              <a href="/archives/" rel="section">
-
-                <i class="menu-item-icon fa fa-fw fa-archive"></i> <br /> 归档
-              </a>
-            </li>
-
-
-            <li class="menu-item menu-item-about">
-              <a href="/about/" rel="section">
-
-                <i class="menu-item-icon fa fa-fw fa-user"></i> <br /> 关于
-              </a>
-            </li>
-
-
-
-            <li class="menu-item menu-item-search">
-
-              <a href="javascript:;" class="popup-trigger">
-
-
-                <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索
-              </a>
-            </li>
-
-            <li id="loginLi" class="menu-item menu-item-login">
-              <a href="https://oauth.xmatrix.studio/?sid=10003&amp;args=/index.html" rel="section">
-                <i class="menu-item-icon fa fa-fw fa-user-o"></i> <br> 登陆
-              </a>
-            </li>
-          </ul>
-
-
-
-          <div class="site-search">
-
-            <div class="popup search-popup local-search-popup">
-              <div class="local-search-header clearfix">
-                <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-                <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-                <div class="local-search-input-wrapper">
-                  <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
-                </div>
-              </div>
-              <div id="local-search-result"></div>
-            </div>
-
-
-
-          </div>
-
-        </nav>
-
-
-
-      </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-
-
-            <div id="posts" class="posts-expand">
-              <header class="post-header">
-                <h1 class="post-title" itemprop="name headline">用户中心</h1>
-              </header>
-              <h1>Hi,<b id="userName"></b> </h1>
-              <h2>Email: <b id="userEmail"></b> </h2>
-              <h2>Home: <b id="userWeb"></b> </h2>
-              <h2>Level: <b id="userLevel"></b> (<b id="userExp"></b>/<b id="userExpMax"></b>)</h2>
-              <h2>Class: <b id="userClass"></b> </h2>
-              <a href="https://oauth.xmatrix.studio/user.html" class="btn" target="_blank">修改信息</a>
-              <a href="#" onclick="logout()" class="btn">退出登陆</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">
-
-          &copy;
-          <span itemprop="copyrightYear">2017</span>
-          <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-          <span class="author" itemprop="copyrightHolder">ZhenlyChen</span>
-        </div>
-
-        <div>
-          粤ICP备16109955号-1
-        </div>
-        <div>
-          访问次数：<b id="numPeople"></b>
-        </div>
-
-
-        <div class="powered-by">
-          由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-        </div>
-
-        <div class="theme-info">
-          主题 -
-          <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-        </div>
-
-
-
-
-
-
-      </div>
-    </footer>
-
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-
-    </div>
-
-
-  </div>
-
-
-
-  <script type="text/javascript">
-    if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-      window.Promise = null;
-    }
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
-
-
-
-
-
-
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
-  <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
-
-
-
-
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% if theme.local_search.enable %}
   <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "search.xml";
+    var search_path = "{{ config.search.path }}";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
-    var path = "/" + search_path;
+    var path = "{{ config.root }}" + search_path;
     // monitor main search box;
 
-    var onPopupClose = function(e) {
+    var onPopupClose = function (e) {
       $('.popup').hide();
       $('#local-search-input').val('');
       $('.search-result-list').remove();
@@ -518,8 +59,8 @@
           var datas = isXml ? $("entry", res).map(function() {
             return {
               title: $("title", this).text(),
-              content: $("content", this).text(),
-              url: $("url", this).text()
+              content: $("content",this).text(),
+              url: $("url" , this).text()
             };
           }).get() : res;
           var input = document.getElementById(search_id);
@@ -539,31 +80,26 @@
                 var searchTextCount = 0;
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
                 var indexOfContent = [];
                 // only match articles with not empty titles
-                if (title != '') {
+                if(title != '') {
                   keywords.forEach(function(keyword) {
                     function getIndexByWord(word, text, caseSensitive) {
                       var wordLen = word.length;
                       if (wordLen === 0) {
                         return [];
                       }
-                      var startPosition = 0,
-                        position = [],
-                        index = [];
+                      var startPosition = 0, position = [], index = [];
                       if (!caseSensitive) {
                         text = text.toLowerCase();
                         word = word.toLowerCase();
                       }
                       while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({
-                          position: position,
-                          word: word
-                        });
+                        index.push({position: position, word: word});
                         startPosition = position + wordLen;
                       }
                       return index;
@@ -583,8 +119,8 @@
                 if (isMatch) {
                   // sort index by position of keyword
 
-                  [indexOfTitle, indexOfContent].forEach(function(index) {
-                    index.sort(function(itemLeft, itemRight) {
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
                       if (itemRight.position !== itemLeft.position) {
                         return itemRight.position - itemLeft.position;
                       } else {
@@ -605,10 +141,7 @@
                       if (word === searchText) {
                         searchTextCountInSlice++;
                       }
-                      hits.push({
-                        position: position,
-                        length: word.length
-                      });
+                      hits.push({position: position, length: word.length});
                       var wordEnd = position + word.length;
 
                       // move to next position of hit
@@ -647,13 +180,13 @@
                     // cut out 100 characters
                     var start = position - 20;
                     var end = position + 80;
-                    if (start < 0) {
+                    if(start < 0){
                       start = 0;
                     }
                     if (end < position + word.length) {
                       end = position + word.length;
                     }
-                    if (end > content.length) {
+                    if(end > content.length){
                       end = content.length;
                     }
                     slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
@@ -661,7 +194,7 @@
 
                   // sort slices in content by search text's count and hits' count
 
-                  slicesOfContent.sort(function(sliceLeft, sliceRight) {
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
                     if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
                       return sliceRight.searchTextCount - sliceLeft.searchTextCount;
                     } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
@@ -673,7 +206,7 @@
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('1');
+                  var upperBound = parseInt('{{ theme.local_search.top_n_per_article }}');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }
@@ -683,7 +216,7 @@
                   function highlightKeyword(text, slice) {
                     var result = '';
                     var prevEnd = slice.start;
-                    slice.hits.forEach(function(hit) {
+                    slice.hits.forEach(function (hit) {
                       result += text.substring(prevEnd, hit.position);
                       var end = hit.position + hit.length;
                       result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
@@ -701,7 +234,7 @@
                     resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
                   }
 
-                  slicesOfContent.forEach(function(slice) {
+                  slicesOfContent.forEach(function (slice) {
                     resultItem += "<a href='" + articleUrl + "'>" +
                       "<p class=\"search-result\">" + highlightKeyword(content, slice) +
                       "...</p>" + "</a>";
@@ -722,7 +255,7 @@
             } else if (resultItems.length === 0) {
               resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
             } else {
-              resultItems.sort(function(resultLeft, resultRight) {
+              resultItems.sort(function (resultLeft, resultRight) {
                 if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
                   return resultRight.searchTextCount - resultLeft.searchTextCount;
                 } else if (resultLeft.hitCount !== resultRight.hitCount) {
@@ -732,7 +265,7 @@
                 }
               });
               var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function(result) {
+              resultItems.forEach(function (result) {
                 searchResultList += result.item;
               })
               searchResultList += "</ul>";
@@ -740,11 +273,11 @@
             }
           }
 
-          if ('auto' === 'auto') {
+          if ('auto' === '{{ theme.local_search.trigger }}') {
             input.addEventListener('input', inputEventFunction);
           } else {
             $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function(event) {
+            input.addEventListener('keypress', function (event) {
               if (event.keyCode === 13) {
                 inputEventFunction();
               }
@@ -771,10 +304,10 @@
     });
 
     $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e) {
+    $('.popup').click(function(e){
       e.stopPropagation();
     });
-    $(document).on('keyup', function(event) {
+    $(document).on('keyup', function (event) {
       var shouldDismissSearchPopup = event.which === 27 &&
         $('.search-popup').is(':visible');
       if (shouldDismissSearchPopup) {
@@ -782,47 +315,4 @@
       }
     });
   </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-    let sign = 'about/index.html';
-  </script>
-  <script src="https://cdn.bootcss.com/vue/2.3.3/vue.js"></script>
-  <script src="/js/myHexo.js"></script>
-  <script>
-    // 用户中心页面
-    $(() => {
-      if (getCookie('isLogin') != 'true') {
-        window.location.href = '/';
-      }
-      $('#userName').html(getCookie('name'));
-      $('#userEmail').html(getCookie('email'));
-      if (getCookie('web') != 'undefined') {
-        $('#userWeb').html(getCookie('web'));
-      } else {
-        $('#userWeb').html('未设置');
-      }
-      $('#userClass').html(getCookie('class'));
-      $('#userLevel').html(getCookie('level'));
-      $('#userExp').html(getCookie('exp'));
-      $('#userExpMax').html((getCookie('level') + 1) * 50);
-    });
-  </script>
-</body>
-
-</html>
+{% endif %}
