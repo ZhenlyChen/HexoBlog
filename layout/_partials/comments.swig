@@ -27,7 +27,7 @@
           <div class="text_m">
             <p>{{comment.text}}</p>
           </div>
-          <p class="attribution_m">by <a href="/user/{{comment.user}}">{{comment.user}}</a> at {{comment.time}}</p>
+          <p class="attribution_m">by <a href="javascript:;">{{comment.user}}</a> at {{comment.time}}</p>
         </div>
       </article>
       {% endraw %}

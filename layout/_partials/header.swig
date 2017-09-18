@@ -64,7 +64,7 @@
         </li>
       {% endif %}
         <li id="loginLi" class="menu-item menu-item-login">
-          <a href="https://oauth.xmatrix.studio/?sid=10003&amp;args=/index.html" rel="section">
+          <a href="https://oauth.xmatrix.studio/?sid=10002&amp;args=/index.html" rel="section">
               <i class="menu-item-icon fa fa-fw fa-user-o"></i> <br>
             登陆
           </a>

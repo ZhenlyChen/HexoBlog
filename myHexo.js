@@ -51,7 +51,7 @@ let delCookie = (name) => { //为了删除指定名称的cookie，可以将其�
 };
 
 let loginBack = () => {
-  window.location.href = "https://oauth.xmatrix.studio/?sid=10003&args=" + sign + "?where=comments";
+  window.location.href = "https://oauth.xmatrix.studio/?sid=10002&args=" + sign + "?where=comments";
 };
 
 let getComments = () => {
@@ -95,7 +95,7 @@ $(() => {
   //计数系统
   let reg = /page\/[0-9]+\/index.html/;
   if (sign == 'index.html' || reg.test(sign)) getReadCount(); // 主页
-  reg = /^[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-zA-z-]+\/$/;
+  reg = /^[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-zA-z-0-9]+\/$/;
   if (reg.test(sign)) { // 文章页面
     addReadCount();
   }
